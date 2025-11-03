@@ -5,6 +5,8 @@
 
   export default defineConfig({
     plugins: [react()],
+    base: '/macromaster/',   // <-- repo name with slashes
+  build: { outDir: 'dist' }
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
